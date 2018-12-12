@@ -1,5 +1,16 @@
-<?php include_once "_header.php"; ?>
+<?php
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        if(isset($_POST['firstName'])&&!empty($_POST['firstName'])){
+            $firstname = $_POST['firstName'];
+        }
+        echo $firstname;
+    }
+?>
 
+
+
+
+<?php include_once "_header.php"; ?>
 
 
 <div class="container">
@@ -98,11 +109,6 @@
         </div>
     </form>
 </div>
-
-
-
-
-
 
 
 <script src="js/jquery-3.3.1.min.js"></script>
