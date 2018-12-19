@@ -1,5 +1,4 @@
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+
 <footer>
     <div class="container">
     <div class="card-footer">
@@ -16,6 +15,7 @@
     </div>
 </footer>
 
-
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

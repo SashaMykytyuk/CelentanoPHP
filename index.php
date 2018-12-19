@@ -27,6 +27,10 @@
                         . "<td>" . $row['firstName'] . "</td>"
                         . "<td>" . $row['lastName'] . "</td>"
                         . "<td>" . $row['email'] . "</td>"
+                        . "<td><a href='editUser.php?id={$row['id']}' class='btn btn-success'>Dell</a></td>"
+//                        . "<td><button type='button' name='' >"</td>"
+//                        . "<td><button type='button' data-id='".$row['id']."' onclick=\"foo()\">Del</button></td>"
+//                        . "<td>" . $row['email'] . "</td>"
                         . "</tr>";
                     $num++;
                 }
@@ -39,4 +43,23 @@
     </main>
 
 
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<!--<script>-->
+<!--    function foo () {-->
+<!--        $.ajax({-->
+<!--            url:"contact.php",-->
+<!--            type: "POST",-->
+<!--            success:function(){-->
+<!--                $resault = $connect->query("SELECT id,firstName,lastName,email from tblusers");-->
+<!--            }-->
+<!--        });-->
+<!--    }-->
+<!--</script>-->
+
+
 <?php include_once "_footer.php"; ?>
+
+
